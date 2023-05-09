@@ -3,8 +3,12 @@ html {
   }
 
 body *{
-    border: 1px dotted dodgerblue;
+    /*border: 1px dotted dodgerblue;*/
     box-sizing: border-box;
+}
+
+.content {
+    padding: 15px;
 }
 
 
@@ -12,14 +16,15 @@ body{
     background-color: hsl(0,0%,19%);
 }
 
+h1 { font-family: Consolas, monaco, monospace; font-size: 2.5em; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color:white;} 
+h2 { font-family: Consolas, monaco, monospace; font-size: 2em; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20.9px; color:white;}
+h3 { font-family: Consolas, monaco, monospace; font-size: 1.5em; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; color:white;} 
+p { font-family: Consolas, monaco, monospace; font-size: 1em; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; color:white;}
+a { font-family: Consolas, monaco, monospace; font-size: 1em; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; color:dodgerblue;} 
 
-h1 { font-family: Consolas, monaco, monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color:white;} 
-h2 { font-family: Consolas, monaco, monospace; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20.9px; color:white;}
-h3 { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; color:white;} 
-p { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; color:white;}
-a { font-family: Consolas, monaco, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; color:dodgerblue;} 
-blockquote { font-family: Consolas, monaco, monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; color:white;} 
-pre { font-family: Consolas, monaco, monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; color:white;}
+h1, h2, h3 {
+    padding: 15px 0px;
+}
 
 nav{
     display: flex;  
@@ -27,7 +32,7 @@ nav{
 }
 
 nav a{
-    padding:10px;
+    padding:14px;
 }
 
 .splash {
@@ -43,7 +48,7 @@ nav a{
 }
 
 .splash h1{
-    font-size: 60px;
+    font-size: 3.75em;
     line-height: 60px;
 }
 
@@ -62,7 +67,8 @@ nav a{
 }
 
 .about img {
-    width:50%;
+    width:25%;
+    border-radius: 50%;
 }
 
 .projects {
@@ -78,19 +84,6 @@ nav a{
 .projects img {
     width:33.3%;
 }
-
-/*
-.skills{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-
-.skills img{
-    width:50px;
-}
-*/
 
 .skills {
     display: flex;
@@ -108,4 +101,13 @@ nav a{
     width: 100px;
     height: 100px;
     object-fit: contain;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact a {
+    padding: 10px;
   }
