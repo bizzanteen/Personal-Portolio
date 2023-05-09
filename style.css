@@ -78,3 +78,34 @@ nav a{
 .projects img {
     width:33.3%;
 }
+
+/*
+.skills{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+.skills img{
+    width:50px;
+}
+*/
+
+.skills {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills img {
+    flex-basis: 30%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
