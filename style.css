@@ -2,7 +2,6 @@
   body *{
     border: 1px dotted dodgerblue;
   }
-
 */
 
 
@@ -20,12 +19,15 @@
   
   body {
     background-color: hsl(0, 0%, 19%);
-    border: 1px dotted dodgerblue;
   }
   
   .content {
     margin: 15px 40px;
   }
+
+  section {
+    scroll-margin-top: 50px;
+   }
   
   /* Typography */
   h1, h2, h3, p, a {
@@ -40,11 +42,16 @@
     line-height: 1.25em;
     padding: 25px 0;
   }
+
+
   
   h2 {
     font-size: 2em;
     line-height: 20.9px;
-    padding: 25px 0;
+    padding: 15px 5px;
+    margin: 30px 0;
+    background-color: #272727;
+    width:100%;
   }
   
   h3 {
@@ -54,13 +61,15 @@
   }
   
   p, a {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
     line-height: 20px;
+    padding: 15px 5px;
+
   }
   
   a {
-    color: dodgerblue;
+    color: #ff731c;
   }
   
   /* Navigation bar */
@@ -69,6 +78,7 @@
     background-color: rgba(0, 0, 0, 0.756);
     position:fixed;
     width: 100%;
+    z-index: 2;
   }
   
   nav a {
@@ -85,32 +95,41 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
-  
-  .splash button {
-    background-color: white;
-    width:15%;
-    height:10%;
-    font-size:1em;
+
+  .splash .title {
+    display: inline-block;
   }
-  
+
+  .splash h1{
+    padding:0 0;
+    width:100%;
+  }
+
+  #web-developer {
+
+    filter: drop-shadow(0 0 0.75rem white);
+    color: #ff731c;
+    filter: drop-shadow(0 0 0.75rem #ff863ba1);
+
+
+  }
+
   /* About section */
-  .about {
+ 
+
+  .about-columns {
     display: flex;
-  }
-  
-  .about-text {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   .about img {
     width: 25vw;
     height: 25vw;
     border-radius: 50%;
-    margin: auto 0;
+    margin: 0 5%;
   }
   
   /* Projects section */
@@ -147,7 +166,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 10%;
+    min-width: 5%;
+    max-width:10%;
     height: auto;
     object-fit: contain;
   }
@@ -159,6 +179,29 @@
   }
   
   .contact a {
-    padding-bottom: 10px;
+    font-size: 1.3em;
   }
   
+
+  /* Large screens */
+@media only screen and (min-width: 1200px) {
+  /* Adjust styles for large screens here */
+
+  .content {
+    margin: 15px 10vw;
+  }
+
+  .splash {
+    height:100vh;
+  }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Adjust styles for medium screens here */
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+  /* Adjust styles for small screens here */
+}
