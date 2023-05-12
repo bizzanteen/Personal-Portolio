@@ -274,6 +274,11 @@
 
   .projects {
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .projects div {
+    margin: 5px 0;
   }
 
 }
