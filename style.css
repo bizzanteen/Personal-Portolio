@@ -118,13 +118,26 @@
     width:100%;
   }
 
+  .splash a{
+    align-items: end;
+    position: absolute; 
+    bottom: 0;
+  }
+
+  .splash a:hover {
+    background-color: inherit;
+  }
+
+  .splash a img:hover {
+    width: 150px;
+    transition: width 0.5s ease-in;
+  }
+
   #web-developer {
 
     filter: drop-shadow(0 0 0.75rem white);
     color: #ff731c;
     filter: drop-shadow(0 0 0.75rem #ff863ba1);
-
-
   }
 
   /* About section */
@@ -230,6 +243,11 @@
     line-height: 1.5em;
   }
 
+  .splash .content {
+    margin: 0 auto;
+    justify-items:center;
+  }
+
   nav {
     display: none;
   }
@@ -239,7 +257,7 @@
   }
 
   .skills img{
-    max-width: 25%;
+    max-width: 33%;
   }
 
   a, p {
