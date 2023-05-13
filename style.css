@@ -43,8 +43,6 @@
     padding: 25px 0;
   }
 
-
-  
   h2 {
     font-size: 2em;
     line-height: 20.9px;
@@ -70,16 +68,28 @@
   
   a {
     color: #ff731c;
+    transition-property: all background-color;
+    transition-duration: 0.25s;
   }
 
   a:hover {
     color: #ffa46c;
     background-color: #272727;
+    font-size: 1.25em;
   }
 
-  a {
+  a:active{
+    color: #ffa46c;
+    background-color: #272727;
+  }
+
+  #arrow:hover {
     transition-property: color background-color;
     transition-duration: 0.25s;
+  }
+
+  #arrow:hover {
+    font-size: 2em;
   }
   
   /* Navigation bar */
@@ -128,9 +138,14 @@
     background-color: inherit;
   }
 
+  .splash a img {
+    width: 2em;
+    transition: width 0.1s ease-in-out;
+  }
+
   .splash a img:hover {
-    width: 150px;
-    transition: width 0.5s ease-in;
+    width: 2.5em;
+
   }
 
   #web-developer {
@@ -190,10 +205,18 @@
     flex-direction: column;
     align-items: center;
     min-width: 5%;
-    max-width:10%;
+    max-width:12.5%;
     height: auto;
     object-fit: contain;
+    transition: all 0.2s ease-in;
   }
+
+  .skills img:hover {
+    max-width: 15%;
+    background-color: #272727;
+    opacity: 25%;
+    padding: 5px;
+  } 
   
   /* Contact section */
   .contact {
@@ -230,6 +253,24 @@
 /* Small screens */
 @media only screen and (max-width: 767px) {
 
+/* Typography */
+
+h2 {
+  font-size: 1.75em;
+  text-align: center;
+} 
+
+h3 {
+  font-size: 1.5em;
+  text-align:center;
+}
+
+a, p {
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Splash section */
 
   .splash {
     width:100vw;
@@ -248,6 +289,8 @@
     justify-items:center;
   }
 
+  /* Nav section */
+
   nav {
     display: none;
   }
@@ -256,28 +299,17 @@
     padding: 10px 10px;
   }
 
+  /* Skills section */
+
   .skills img{
     max-width: 33%;
-  }
-
-  a, p {
-    font-size: 1em;
-    text-align: center;
   }
 
   .contact a {
     font-size: 1em;
   }
 
-  h2 {
-    font-size: 1.75em;
-    text-align: center;
-  } 
-
-  h3 {
-    font-size: 1.5em;
-    text-align:center;
-  }
+  /* About section */
 
   .about-columns {
     flex-direction: column-reverse;
@@ -290,6 +322,8 @@
     height: auto;
   }
 
+  /* Projects section */
+
   .projects {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -298,5 +332,7 @@
   .projects div {
     margin: 5px 0;
   }
+
+  
 
 }
